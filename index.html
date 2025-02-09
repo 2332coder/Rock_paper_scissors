@@ -5,18 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">           <!--for roboto font-->
+    <script src="script1.js" defer></script>
+    <script src="script2.js" defer></script>
 </head>
 <body>
-    <div class="score-div">
-        <img src="images/scissors.svg" alt="" style="height: 100px;">
+
+    <div class="heading-div"><p>Rock Paper Scissors</p></div>
+
+    <div class="score-div">                                         <!--score div-->
+        <h1 class="human-name">human</h1>
+        <h1 class="human-scorecard">0</h1>
+        <h1>:</h1>
+        <h1 class="computer-scorecard">0</h1>
+        <h1>computer</h1>                
     </div>  
-    <div class="box">        
-        <div class="choice-div">
-            <button class="choice-btn">Rock</button>
-            <button class="choice-btn">Paper</button>
-            <button class="choice-btn">Scissors</button>
-        </div>   
+
+    <div class="box">                                               <!--contains the choice buttons and displays your choice-->
+        <div class="chosen-div">
+            <img src="" class="human-choice-pic">                   <!--  contains the choices of both parties -->
+            <img src="" class="computer-choice-pic">
+        </div>
+        
+        <div class="button-div">
+            <button class="choice-btn-rock"><img src="images/stone.svg" alt=""></button>
+            <button class="choice-btn-paper"><img src="images/paper.svg" alt=""></button>
+            <button class="choice-btn-scissors"><img src="images/scissors.svg" alt=""></button>
+        </div> 
    </div> 
+
 </body>
 </html>

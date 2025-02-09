@@ -1,5 +1,18 @@
 let humanScore=0,computerScore=0;                    //initialising the code
 
+                                                    //selectors for showing the score card
+let human_scorecard=document.querySelector('.human-scorecard');
+let computer_scorecard=document.querySelector('.computer-scorecard');
+
+
+let human_name=document.querySelector('.human-name');
+let getName=()=>{
+    const name=prompt('Enter your god name');
+    human_name.innerText=name;
+}
+//getName();
+
+
 function getComputerChoice(){                       //find the choice of computer
     let x=Math.floor(3*Math.random());
     if(x==0){                                   
@@ -12,14 +25,6 @@ function getComputerChoice(){                       //find the choice of compute
         return "scissors";
     }
 }
-
-
-
-
-// function getHumanChoice(){                          //get the choice from human player
-//     let y=prompt('enter your choice');
-//     return y.toLocaleLowerCase();
-// }
 
 
 function playRound(humanSelection, computerSelection) {      //function for playing a round
@@ -49,19 +54,13 @@ function playRound(humanSelection, computerSelection) {      //function for play
             computerScore++;
         }
     }
-    console.log(`computer:${computerSelection} human:${humanSelection} \n score: ${computerScore} : ${humanScore}`);
+    console.log(`human:${humanSelection}   computer:${computerSelection} \n score: ${humanScore} : ${computerScore}`);
+    human_scorecard.innerHTML=humanScore;
+    computer_scorecard.innerHTML=computerScore;
 }
 
 
-function playGame(){                            //plays the game 5 times
 
-    for(let i=0;i<5;i++){
-        const humanSelection = getHumanChoice();
-        const computerSelection = getComputerChoice();  
-        playRound(humanSelection, computerSelection);
-    }
-    
-}
-playGame();
+
 
 
