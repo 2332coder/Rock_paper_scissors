@@ -27,35 +27,67 @@ body{
 
                                             /* div used to display the score */
 .score-div{
-    background-color: rgb(136, 215, 242);       
-    height: 100px;
+    background-color: rgb(185, 222, 235);       
+    height: 80px;
     flex:1;
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-.chosen-div{
-    height:100px;
-    background-color: brown;
-}
+
 
                                             /*contains the choice div and buttons*/
 .box{
     height: 500px;
-    background-color:rgb(242, 207, 213);   
-    align-content: center; 
+    background-color:rgb(255, 255, 255);   
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chosen-div{
+
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 
+.human-choice-pic{
+    height: 170px;
+    width:170px;
+    border-radius: 1000px;
+    background-color: rgb(255, 119, 119);   
+}
+.computer-choice-pic{
+    height: 170px;
+    width:170px;
+    border-radius: 1000px;
+    background-color: rgb(127, 103, 248);
+}
 
+#round-winner{
+    display: block;
+    background-color: rgb(255, 255, 255);
+    margin-top: -50px; 
+    font-size: 25px; 
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+}
 
                             /* below are the styles for buttons */
 .button-div{
     gap:20px ;
-    background-color: lightgreen;
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
+    height: 150px;
+    align-items: center;
 
 }
 
@@ -66,7 +98,7 @@ body{
     height: 125px;
     z-index: 4;
     transition: all 0.3s;
-    border: none;
+    border-width:1px;
 }
 .choice-btn-rock:hover{
     margin-top:-7px;
@@ -80,7 +112,7 @@ body{
     height: 125px;
     z-index: 4;
     transition: all 0.3s;
-    border: none;
+    border-width:1px;
 }
 .choice-btn-paper:hover{
     margin-top:-7px;
@@ -95,10 +127,10 @@ body{
     height: 125px;
     z-index: 4;
     transition: all 0.3s;
-    border: none;
+    border-width:1px;
 }
 .choice-btn-scissors:hover{
-    margin-top:-7px;
+    margin-top:-15px;
     
 }
 
