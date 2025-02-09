@@ -1,0 +1,38 @@
+body{
+    margin: 0px;
+}
+
+                                            /* div used to display the score */
+.score-div{
+    background-color: rgb(136, 215, 242);       
+    height: 100px;
+    flex:1;
+    display: flex;
+    justify-content: space-around;
+}
+
+                                            /*contains the choice div and buttons*/
+.box{
+    height: 500px;
+    background-color:rgb(242, 207, 213);   
+    align-content: center; 
+}
+
+.choice-div{
+    gap:20px ;
+    background-color: lightgreen;
+    display: flex;
+    justify-content: center;
+
+}
+
+.choice-btn{
+    padding: 5px;
+    border-radius: 1000px;
+    width:100px;
+    height: 100px;
+}
+
+
+
+

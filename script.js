@@ -16,10 +16,10 @@ function getComputerChoice(){                       //find the choice of compute
 
 
 
-function getHumanChoice(){                          //get the choice from human player
-    let y=prompt('enter your choice');
-    return y.toLocaleLowerCase();
-}
+// function getHumanChoice(){                          //get the choice from human player
+//     let y=prompt('enter your choice');
+//     return y.toLocaleLowerCase();
+// }
 
 
 function playRound(humanSelection, computerSelection) {      //function for playing a round
