@@ -45,9 +45,8 @@ body{
     display: flex;
     flex-direction: column;
 }
-
+                                            /* div for displaying both parties choices  */
 .chosen-div{
-
     background-color: rgb(255, 255, 255);
     justify-content: center;
     height: 200px;
@@ -70,6 +69,8 @@ body{
     background-color: rgb(127, 103, 248);
 }
 
+
+                                /* style for div that displays the  winner of each round*/
 #round-winner{
     display: block;
     background-color: rgb(255, 255, 255);
